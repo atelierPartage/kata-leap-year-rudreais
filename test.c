@@ -12,15 +12,21 @@ Test(simple, 2015)
 	cr_assert(!is_leap_year(2015));
 }
 
-Test(simple, 4_neg)
+Test(negative, 4)
 {
 	cr_assert(is_leap_year(-4));
 }
 
-Test(simple, 2012)
+Test(simple, 0)
 {
-	cr_assert(is_leap_year(2012));
+	cr_assert(is_leap_year(0));
 }
+
+Test(negative, 7)
+{
+	cr_assert(!is_leap_year(-7));
+}
+
 /**
 Test(simple, two)
 {
