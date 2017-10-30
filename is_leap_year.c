@@ -1,4 +1,4 @@
 int is_leap_year(int year)
 {
-	return (((year % 4) % 100) == 0) ? 1 : 0;
+	return ((year % 4 ) == 0) ? (year % 100) : !(year % 400);
 }
